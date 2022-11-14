@@ -18,6 +18,7 @@ import java.time.LocalDateTime;
 //@Where(clause = "is_deleted=false")         // SELECT * FROM users WHERE id = 4 AND is_deleted = false;
 public class User extends BaseEntity {
 
+
     private String firstName;
     private String lastName;
 
