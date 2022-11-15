@@ -41,11 +41,42 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         return http
+                .authorizeRequests()
+//                .antMatchers("/user/**").hasRole("ADMIN")
+                .antMatchers("/user/**").hasAuthority("Admin")
+                .antMatchers("/project/**").hasAuthority("Manager")
+                .antMatchers("/task/employee/**").hasAuthority("Employee")
+                .antMatchers("/task/**").hasAuthority("Manager")
+//                .antMatchers("/task/**").hasAnyRole("EMPLOYEE","ADMIN")
+//                .antMatchers("/task/**").hasAuthority("ROLE_EMPLOYEE")
+                .antMatchers(
+                        "/",
+                        "/login",
+                        "/fragments/**",
+                        "/assets/**",
+                        "/images/**"
+                ).permitAll()
+                .anyRequest().authenticated()
+                .and()
+//                .httpBasic()
+                .formLogin()
+                .loginPage("/login")
+                .defaultSuccessUrl("/welcome")
+                .failureUrl("/login?error=true")
+                .permitAll()
+                .and().build();
+    }
+
+    /*
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+
+        return http
                 .authorizeRequests() //we need to authorize pages, who will see, who should not see
-                .antMatchers("/user/**").hasRole("ADMIN") // under /user end point everything should be accessible by admin
-                .antMatchers("/project/**").hasRole("MANAGER")
-                .antMatchers("/task/employee/**").hasRole("EMPLOYEE")
-                .antMatchers("/task/**").hasRole("MANAGER")
+                //.antMatchers("/user/**").hasRole("ADMIN") // under /user end point everything should be accessible by admin
+                .antMatchers("/user/**").hasAuthority("Admin")
+                //.antMatchers("/project/**").hasRole("MANAGER")
+                //.antMatchers("/task/employee/**").hasRole("EMPLOYEE")
+                //.antMatchers("/task/**").hasRole("MANAGER")
                 //.antMatchers("/task/**").hasAnyRole("EMPLOYEE","ADMIN")
                 //.antMatchers("/task/**").hasAuthority("ROLE_EMPLOYEE")// hasAuthority -->> ROLE_ .....
                 .antMatchers(
@@ -67,5 +98,7 @@ public class SecurityConfig {
                 .and().build();
 
     }
+
+     */
 
 }
