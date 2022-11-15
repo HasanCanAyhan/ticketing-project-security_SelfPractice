@@ -55,7 +55,12 @@ public class SecurityConfig {
                 ).permitAll() // those above pages are permitted for all
                 .anyRequest().authenticated() // other pages are needed to be authenticated
                 .and()
-                .httpBasic() //popup box
+                //.httpBasic() //popup box, spring provides it
+                .formLogin()
+                    .loginPage("/login") // we changed in the login.htm -->>    <form th:action="@{/login}" method="post" >
+                    .defaultSuccessUrl("/welcome")//after successful login go to welcome
+                    .failureUrl("/login?error=true")
+                    .permitAll()
                 .and().build();
 
     }
