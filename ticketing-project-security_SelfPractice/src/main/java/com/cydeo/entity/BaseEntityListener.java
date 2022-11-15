@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Component
 public class BaseEntityListener extends AuditingEntityListener {
 
-    //in the db, user , project , when it create , update, we keeping track, who did it
+    //in the db, user , project , when it create , update, we keeping track, who did it , to show details
 
 
     @PrePersist
