@@ -18,6 +18,7 @@ import java.util.List;
 @Configuration
 public class SecurityConfig {
 
+    /*
     @Bean  //manually , no have connect to DB yet, here we override my User to Spring Security User
     public UserDetailsService userDetailsService(PasswordEncoder encoder){
         //PasswordEncoder encoder to create encoder password from my password which is coming from login page
@@ -32,6 +33,8 @@ public class SecurityConfig {
 
         //we passed Spring Security's User to UI-Part with my user information manually
     }
+
+     */
 
 
     @Bean
