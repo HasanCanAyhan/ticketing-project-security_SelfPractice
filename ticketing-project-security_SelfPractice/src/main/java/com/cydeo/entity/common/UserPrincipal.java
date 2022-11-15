@@ -36,9 +36,6 @@ public class UserPrincipal implements UserDetails {
     @Override
     public String getPassword() { // get the user password from DB , then set it to Spring Security User password
 
-        //PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-        //return passwordEncoder.encode(user.getPassWord());
-
         return this.user.getPassWord();
     }
 
@@ -63,7 +60,7 @@ public class UserPrincipal implements UserDetails {
     }
 
     @Override
-    public boolean isEnabled() {
+    public boolean isEnabled() {//sms, text Messagge
         return this.user.isEnabled();
     }
 
