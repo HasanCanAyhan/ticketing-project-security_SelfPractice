@@ -39,6 +39,10 @@ public class SecurityConfig {
 
         return http
                 .authorizeRequests() //we need to authorize pages, who will see, who should not see
+                .antMatchers("/user/**").hasRole("ADMIN") // under /user end point everything should be accessible by admin
+                .antMatchers("/project/**").hasRole("MANAGER")
+                .antMatchers("/task/employee/**").hasRole("EMPLOYEE")
+                .antMatchers("/task/**").hasRole("MANAGER")
                 .antMatchers(
                         "/",
                         "/login",
