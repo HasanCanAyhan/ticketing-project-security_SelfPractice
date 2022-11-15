@@ -37,19 +37,19 @@ public class SecurityConfig {
      */
 
 
-    @Bean // for defining form - our form
+    @Bean // for defining our validation form
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         return http
                 .authorizeRequests()
 //                .antMatchers("/user/**").hasRole("ADMIN")
-                .antMatchers("/user/**").hasAuthority("Admin")
+                .antMatchers("/user/**").hasAuthority("Admin") // it should be matched with database role
                 .antMatchers("/project/**").hasAuthority("Manager")
                 .antMatchers("/task/employee/**").hasAuthority("Employee")
                 .antMatchers("/task/**").hasAuthority("Manager")
 //                .antMatchers("/task/**").hasAnyRole("EMPLOYEE","ADMIN")
 //                .antMatchers("/task/**").hasAuthority("ROLE_EMPLOYEE")
-                .antMatchers(
+                .antMatchers( // it can be folder or end point
                         "/",
                         "/login",
                         "/fragments/**",
@@ -79,8 +79,8 @@ public class SecurityConfig {
                 //.antMatchers("/task/**").hasRole("MANAGER")
                 //.antMatchers("/task/**").hasAnyRole("EMPLOYEE","ADMIN")
                 //.antMatchers("/task/**").hasAuthority("ROLE_EMPLOYEE")// hasAuthority -->> ROLE_ .....
-                .antMatchers(
-                        "/",
+                .antMatchers( // related to pages
+                        "/", //localhost:8080/
                         "/login",
                         "/fragments/**",
                         "/assets/**",
@@ -93,8 +93,8 @@ public class SecurityConfig {
                 .formLogin()
                     .loginPage("/login") // we changed in the login.htm -->>    <form th:action="@{/login}" method="post" >
                     .defaultSuccessUrl("/welcome")//after successful login go to welcome
-                    .failureUrl("/login?error=true")
-                    .permitAll()
+                    .failureUrl("/login?error=true") // if user put wrong info
+                    .permitAll() // form should be accessible from all
                 .and().build();
 
     }
