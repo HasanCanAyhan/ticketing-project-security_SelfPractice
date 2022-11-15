@@ -1,22 +1,20 @@
 package com.cydeo.config;
 
+import com.cydeo.service.SecurityService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 public class SecurityConfig {
+
+    private final SecurityService securityService;
+
+    public SecurityConfig(SecurityService securityService) {
+        this.securityService = securityService;
+    }
 
     /*
     @Bean  //manually , no have connect to DB yet, here we override my User to Spring Security User
@@ -60,11 +58,21 @@ public class SecurityConfig {
                 .and()
 //                .httpBasic()
                 .formLogin()
-                .loginPage("/login")
-                .defaultSuccessUrl("/welcome")
-                .failureUrl("/login?error=true")
-                .permitAll()
-                .and().build();
+                    .loginPage("/login")
+                    .defaultSuccessUrl("/welcome")
+                    .failureUrl("/login?error=true")
+                    .permitAll()
+                .and()
+                .logout()
+                    .logoutRequestMatcher(new AntPathRequestMatcher("/logout")) // looking for where is logout button in the html page
+                    .logoutSuccessUrl("/login") // after logout, go to begin which is login page
+                .and()
+                .rememberMe()
+                    .tokenValiditySeconds(120)
+                    .key("cydeo")
+                    .userDetailsService(securityService)// to capture who log in
+                .and()
+                .build();
     }
 
     /*
