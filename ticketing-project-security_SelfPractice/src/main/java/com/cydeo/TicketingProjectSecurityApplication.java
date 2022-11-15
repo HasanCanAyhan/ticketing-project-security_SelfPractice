@@ -21,7 +21,7 @@ public class TicketingProjectSecurityApplication {
     }
 
 
-    @Bean
+    @Bean // it is coming from security by adding security dependency
     public PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();
     }

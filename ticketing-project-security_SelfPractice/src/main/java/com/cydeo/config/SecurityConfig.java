@@ -37,7 +37,7 @@ public class SecurityConfig {
      */
 
 
-    @Bean
+    @Bean // for defining form - our form
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         return http
