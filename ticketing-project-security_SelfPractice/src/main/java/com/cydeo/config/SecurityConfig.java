@@ -12,8 +12,11 @@ public class SecurityConfig {
 
     private final SecurityService securityService;
 
-    public SecurityConfig(SecurityService securityService) {
+    private final AutSuccessHandler autSuccessHandler;
+
+    public SecurityConfig(SecurityService securityService, AutSuccessHandler autSuccessHandler) {
         this.securityService = securityService;
+        this.autSuccessHandler = autSuccessHandler;
     }
 
     /*
@@ -59,7 +62,8 @@ public class SecurityConfig {
 //                .httpBasic()
                 .formLogin()
                     .loginPage("/login")
-                    .defaultSuccessUrl("/welcome")
+                    //.defaultSuccessUrl("/welcome")
+                    .successHandler(autSuccessHandler) // it will be landed ->> admin : userCreate page, manager : projectCreate page
                     .failureUrl("/login?error=true")
                     .permitAll()
                 .and()
