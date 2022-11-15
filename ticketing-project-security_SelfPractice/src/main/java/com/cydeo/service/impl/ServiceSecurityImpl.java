@@ -6,12 +6,16 @@ import com.cydeo.repository.UserRepository;
 import com.cydeo.service.SecurityService;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 @Service
 public class ServiceSecurityImpl implements SecurityService {
 
     private final UserRepository userRepository;
+
+
 
     public ServiceSecurityImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
@@ -27,6 +31,9 @@ public class ServiceSecurityImpl implements SecurityService {
         if (user == null){
             throw  new UsernameNotFoundException(username);
         }
+
+
+
         return new UserPrincipal(user);
     }
 }

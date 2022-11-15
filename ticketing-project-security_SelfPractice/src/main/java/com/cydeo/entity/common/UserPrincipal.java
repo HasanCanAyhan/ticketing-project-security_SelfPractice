@@ -4,13 +4,15 @@ import com.cydeo.entity.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
 public class UserPrincipal implements UserDetails {
-    // impl UserDetails : to override Spring Security User
+    // impl UserDetails : to override fields of  Spring Security User
     //connection class
     //mapper
     // User from DB ---->> User Spring Security
@@ -33,6 +35,10 @@ public class UserPrincipal implements UserDetails {
 
     @Override
     public String getPassword() { // get the user password from DB , then set it to Spring Security User password
+
+        //PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        //return passwordEncoder.encode(user.getPassWord());
+
         return this.user.getPassWord();
     }
 
