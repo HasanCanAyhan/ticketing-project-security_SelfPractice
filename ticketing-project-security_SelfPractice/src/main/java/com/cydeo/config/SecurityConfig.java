@@ -4,6 +4,7 @@ import com.cydeo.service.SecurityService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
@@ -43,7 +44,7 @@ public class SecurityConfig {
 
         return http
                 .authorizeRequests()
-//                .antMatchers("/user/**").hasRole("ADMIN")
+//                .antMatchers("/user/**").hasRole("ADMIN") // ROLE_ADMIN
                 .antMatchers("/user/**").hasAuthority("Admin") // it should be matched with database role
                 .antMatchers("/project/**").hasAuthority("Manager")
                 .antMatchers("/task/employee/**").hasAuthority("Employee")
@@ -63,7 +64,7 @@ public class SecurityConfig {
                 .formLogin()
                     .loginPage("/login")
                     //.defaultSuccessUrl("/welcome")
-                    .successHandler(autSuccessHandler) // it will be landed ->> admin : userCreate page, manager : projectCreate page
+                    .successHandler(autSuccessHandler) // it will be landed ->> if admin log in : userCreate page, manager : projectCreate page
                     .failureUrl("/login?error=true")
                     .permitAll()
                 .and()
@@ -73,7 +74,7 @@ public class SecurityConfig {
                 .and()
                 .rememberMe()
                     .tokenValiditySeconds(120)
-                    .key("cydeo")
+                    .key("cydeo")// it can be any name
                     .userDetailsService(securityService)// to capture who log in
                 .and()
                 .build();

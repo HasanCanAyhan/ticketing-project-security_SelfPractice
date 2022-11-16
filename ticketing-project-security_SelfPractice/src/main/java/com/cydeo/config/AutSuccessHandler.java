@@ -24,7 +24,7 @@ public class AutSuccessHandler implements AuthenticationSuccessHandler {
         So we are going with the guaranteed way.
          */
 
-        if (roles.contains("Admin")){
+        if (roles.contains("Admin")){ // if admin log in , go to user create page
             response.sendRedirect("/user/create");
         }
 
