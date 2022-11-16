@@ -64,8 +64,8 @@ public class UserPrincipal implements UserDetails {
         return this.user.isEnabled();
     }
 
-    public Long getId(){
-        return this.user.getId();
+    public Long getId(){ // give this id to spring security
+        return this.user.getId(); // user id from db
     }
 
 }

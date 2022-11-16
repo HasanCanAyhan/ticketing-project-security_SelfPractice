@@ -24,9 +24,10 @@ public class BaseEntityListener extends AuditingEntityListener {
         baseEntity.setInsertDateTime(LocalDateTime.now());
         baseEntity.setLastUpdateDateTime(LocalDateTime.now());
 
-        if (authentication != null && !authentication.getName().equals("anonymousUser")){
+        if (authentication != null && !authentication.getName().equals("anonymousUser")){ //spring understands this name
             Object principal =authentication.getPrincipal();
             baseEntity.setInsertUserId( ( (UserPrincipal) principal ).getId()    ); // security giving id
+            //in th DB, user has id, we should give this id to Security, bcs Security's user does not have id.go to UserPrincipal
             baseEntity.setLastUpdateUserId( ( (UserPrincipal) principal ).getId()  );
         }
 
