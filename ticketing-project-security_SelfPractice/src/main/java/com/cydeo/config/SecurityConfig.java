@@ -52,7 +52,7 @@ public class SecurityConfig {
 //                .antMatchers("/task/**").hasAnyRole("EMPLOYEE","ADMIN")
 //                .antMatchers("/task/**").hasAuthority("ROLE_EMPLOYEE")
                 .antMatchers( // it can be folder or end point
-                        "/",
+                        //"/",
                         "/login",
                         "/fragments/**",
                         "/assets/**",
