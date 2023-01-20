@@ -2,34 +2,16 @@
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-221.5921.22">
     <data-source name="ticketing-app@localhost" uuid="4a8c6fe6-c7e4-49c7-918f-67a6294be466">
-      <database-info product="PostgreSQL" version="14.5" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.5.0" dbms="POSTGRES" exact-version="14.5" exact-driver-version="42.5">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
-      <user-name>postgres</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
-          </node>
-        </introspection-scope>
-      </schema-mapping>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
     </data-source>
     <data-source name="ticketingdb@ticketingdb.ch7c0cjwejmd.us-east-1.rds.amazonaws.com" uuid="19a76448-8da4-46ea-adee-7f757deb21c1">
       <database-info product="PostgreSQL" version="13.7" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.5.0" dbms="POSTGRES" exact-version="13.7" exact-driver-version="42.5">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
-      <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="database" qname="@">
-            <node kind="schema" qname="@" />
-          </node>
-        </introspection-scope>
-      </schema-mapping>
+      <schema-mapping />
     </data-source>
   </component>
 </project>

@@ -8,14 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ticketing-project-security_SelfPractice" />
+        <module name="ticketing-project-security" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ticketing-project-security" target="11" />
       <module name="ticketing-project-security_SelfPractice" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ticketing-project-security" options="-parameters" />
       <module name="ticketing-project-security_SelfPractice" options="-parameters" />
     </option>
   </component>
