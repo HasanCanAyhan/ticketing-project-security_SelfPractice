@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f447041-8b52-4d11-957f-370d103532e5" name="Changes" comment="ticketing-project-spring security - docker">
+      <change beforePath="$PROJECT_DIR$/ticketing-project-security_SelfPractice/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ticketing-project-security_SelfPractice/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticketing-project-security_SelfPractice/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ticketing-project-security_SelfPractice/target/classes/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="part-0" />
+        <entry key="$PROJECT_DIR$" value="part2" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HXkA6OpmbEYOBJXxfwBDwyiaG6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ayhan/IdeaProjects/WithNeuComputer_Projects/ticketing-project-security&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;9dd381ef4392f2c6b045e8393c21f291&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="TicketingProjectSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
+      <module name="ticketing-project-security_SelfPractice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cydeo.TicketingProjectSecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.TicketingProjectSecurityApplication" />
+        <item itemvalue="Spring Boot.TicketingProjectSecurityApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f447041-8b52-4d11-957f-370d103532e5" name="Changes" comment="" />
+      <created>1668438670001</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668438670001</updated>
+      <workItem from="1668438671343" duration="1121000" />
+      <workItem from="1668440107315" duration="18446000" />
+      <workItem from="1668467921034" duration="4268000" />
+      <workItem from="1668474316576" duration="527000" />
+      <workItem from="1668514660234" duration="9777000" />
+      <workItem from="1668524684487" duration="21813000" />
+      <workItem from="1668603460730" duration="4986000" />
+      <workItem from="1668690597189" duration="4374000" />
+      <workItem from="1668771809345" duration="2806000" />
+      <workItem from="1668873241170" duration="5464000" />
+      <workItem from="1670256967485" duration="722000" />
+      <workItem from="1670775219688" duration="31000" />
+      <workItem from="1670775337325" duration="33000" />
+      <workItem from="1671695169673" duration="20892000" />
+      <workItem from="1671976154420" duration="2625000" />
+      <workItem from="1672083120153" duration="2406000" />
+      <workItem from="1672121703182" duration="7987000" />
+      <workItem from="1672222838688" duration="7047000" />
+      <workItem from="1672962299394" duration="18000" />
+      <workItem from="1674057855253" duration="13793000" />
+      <workItem from="1674139838236" duration="10757000" />
+    </task>
+    <task id="LOCAL-00001" summary="initials">
+      <created>1668440754497</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668440754497</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initials">
+      <created>1668441360312</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668441360312</updated>
+    </task>
+    <task id="LOCAL-00003" summary="spring security">
+      <created>1668441624842</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668441624842</updated>
+    </task>
+    <task id="LOCAL-00004" summary="spring security">
+      <created>1668442497249</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668442497249</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ticketing- project - spring security">
+      <created>1668444238848</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668444238848</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ticketing- project - spring security">
+      <created>1668446698071</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668446698071</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ticketing-project-spring security">
+      <created>1668449511120</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668449511121</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ticketing-project-spring security">
+      <created>1668449837395</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668449837395</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ticketing-project-spring security">
+      <created>1668449856216</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1668449856216</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ticketing-project-spring security">
+      <created>1668457865692</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1668457865692</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ticketing-project-spring security">
+      <created>1668461307371</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1668461307371</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ticketing-project-spring security">
+      <created>1668468848790</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668468848790</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ticketing-project-spring security">
+      <created>1668468884250</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668468884250</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ticketing-project-spring security">
+      <created>1668468998070</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668468998070</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ticketing-project-spring security">
+      <created>1668469055776</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668469055776</updated>
+    </task>
+    <task id="LOCAL-00016" summary="ticketing-project-spring security">
+      <created>1668470594552</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1668470594552</updated>
+    </task>
+    <task id="LOCAL-00017" summary="ticketing-project-spring security">
+      <created>1668470611332</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1668470611333</updated>
+    </task>
+    <task id="LOCAL-00018" summary="ticketing-project-spring security">
+      <created>1668517284119</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668517284119</updated>
+    </task>
+    <task id="LOCAL-00019" summary="ticketing-project-spring security">
+      <created>1668519330746</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668519330746</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ticketing-project-spring security">
+      <created>1668519533885</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1668519533885</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ticketing-project-spring security">
+      <created>1668519545105</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1668519545105</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ticketing-project-spring security">
+      <created>1668519980867</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1668519980867</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ticketing-project-spring security">
+      <created>1668520352112</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1668520352112</updated>
+    </task>
+    <task id="LOCAL-00024" summary="ticketing-project-spring security">
+      <created>1668522871107</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1668522871108</updated>
+    </task>
+    <task id="LOCAL-00025" summary="ticketing-project-spring security">
+      <created>1668524480816</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1668524480816</updated>
+    </task>
+    <task id="LOCAL-00026" summary="ticketing-project-spring security">
+      <created>1668524992113</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1668524992113</updated>
+    </task>
+    <task id="LOCAL-00027" summary="ticketing-project-spring security">
+      <created>1668525000835</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1668525000835</updated>
+    </task>
+    <task id="LOCAL-00028" summary="ticketing-project-spring security">
+      <created>1668529446320</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1668529446320</updated>
+    </task>
+    <task id="LOCAL-00029" summary="ticketing-project-spring security">
+      <created>1668530344539</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1668530344539</updated>
+    </task>
+    <task id="LOCAL-00030" summary="ticketing-project-spring security">
+      <created>1668532861436</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1668532861436</updated>
+    </task>
+    <task id="LOCAL-00031" summary="ticketing-project-spring security">
+      <created>1668534083881</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1668534083881</updated>
+    </task>
+    <task id="LOCAL-00032" summary="ticketing-project-spring security">
+      <created>1668537239823</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1668537239823</updated>
+    </task>
+    <task id="LOCAL-00033" summary="ticketing-project-spring security">
+      <created>1668541031182</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1668541031182</updated>
+    </task>
+    <task id="LOCAL-00034" summary="ticketing-project-spring security">
+      <created>1668541044158</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1668541044158</updated>
+    </task>
+    <task id="LOCAL-00035" summary="ticketing-project-spring security">
+      <created>1668542314591</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1668542314591</updated>
+    </task>
+    <task id="LOCAL-00036" summary="ticketing-project-spring security">
+      <created>1668543995260</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1668543995260</updated>
+    </task>
+    <task id="LOCAL-00037" summary="ticketing-project-spring security">
+      <created>1668544427804</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1668544427804</updated>
+    </task>
+    <task id="LOCAL-00038" summary="ticketing-project-spring security">
+      <created>1668557806773</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1668557806773</updated>
+    </task>
+    <task id="LOCAL-00039" summary="ticketing-project-spring security">
+      <created>1668606126477</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1668606126477</updated>
+    </task>
+    <task id="LOCAL-00040" summary="ticketing-project-spring security">
+      <created>1668875560127</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1668875560127</updated>
+    </task>
+    <task id="LOCAL-00041" summary="ticketing-project-spring security">
+      <created>1668888237676</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1668888237676</updated>
+    </task>
+    <task id="LOCAL-00042" summary="ticketing-project-spring security">
+      <created>1670257075053</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1670257075053</updated>
+    </task>
+    <task id="LOCAL-00043" summary="ticketing-project-spring security">
+      <created>1670257586891</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1670257586891</updated>
+    </task>
+    <task id="LOCAL-00044" summary="ticketing-project-spring security">
+      <created>1674059822876</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1674059822876</updated>
+    </task>
+    <task id="LOCAL-00045" summary="ticketing-project-spring security - docker">
+      <created>1674065648214</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1674065648214</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="part2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
+    <MESSAGE value="initials" />
+    <MESSAGE value="spring security" />
+    <MESSAGE value="ticketing- project - spring security" />
+    <MESSAGE value="ticketing-project-spring security" />
+    <MESSAGE value="ticketing-project-spring security - docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="ticketing-project-spring security - docker" />
+  </component>
+</project>
